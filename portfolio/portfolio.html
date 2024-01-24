@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="header-section">
+    <div class="container">
+      <nav>
+        <h3 class="logo">Portfolio</h3>
+        <ul>
+          <li><a href="#header-section">Home</a></li>
+          <li><a href="#about-section">About</a></li>
+          <li><a href="#project-section">Project</a></li>
+          <li><a href="#contact-section">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="header-text">
+        <div class="row">
+          <div class="header-col1">
+            <p>Web Developer</p>
+            <h1>Hi, I'm <span>Sakshi</span><br>Sathe from Pune</h1>
+          </div>
+          <div class="header-col2">
+            <img src="images.jpg" alt="girl">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="about-section">
+    <div class="container">
+      <div class="row">
+          <div class="about-col2">
+          <h1 class="sub-title">About me</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum beatae amet suscipit repellat nam eveniet, adipisci culpa expedita tenetur consequuntur laborum saepe tempore explicabo facilis dolor a necessitatibus enim ipsum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis rem nobis voluptate aspernatur, adipisci consectetur tempora fugiat aperiam eius recusandae maiores doloremque error natus laudantium cumque consequatur. Consectetur beatae perferendis odit rerum, perspiciatis sapiente facilis magnam debitis natus ullam? Facere temporibus commodi, aperiam error atque tempore dolorem laudantium doloremque illum quasi blanditiis veritatis inventore rerum amet ex consectetur minima quas modi recusandae impedit. Temporibus consequatur eveniet, facilis eum provident quisquam, accusantium ut pariatur nulla reiciendis earum ea nobis atque! Saepe maiores inventore nostrum illo laboriosam. Illum distinctio facere adipisci qui quod doloremque corrupti modi dolorem inventore eveniet quo commodi consectetur enim atque voluptate eligendi quidem, omnis amet consequuntur cum doloribus.Odio consequatur necessitatibus laborum nisi doloribus molestiae? Perferendis hic nostrum minus officiis eligendi? Dolor molestiae qui earum, amet ad perspiciatis non impedit, voluptatibus corporis assumenda cupiditate distinctio sint inventore, tempore maxime dolorum in.
+          </p>
+         <div class="tab-titles">
+           <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+           <p class="tab-links"  onclick="opentab('education')">Education</p>
+         </div>
+         <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Technologies:</span><br>HTML,CSS,JS</li>
+              <li><span>Database:</span><br>PostgreSQL</li>
+              <li><span>Programming Language:</span><br>C,java</li>
+            </ul>
+         </div>
+
+         <div class="tab-contents" id="education">
+          <ul>
+            <li><span>2018</span><br>SSC Completed</li>
+            <li><span>2020</span><br>HSC completed</li>
+            <li><span>2023</span><br>Graduation Completed</li>
+          </ul>
+       </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<div id="project-section">
+    <div class="container">
+      <h1 class="sub-title">Projects</h1>
+          <div class="project-list">
+              <div>
+                <h2>Bank System</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos officia voluptatibus nisi rerum laboriosam reprehenderit fugiat ducimus magnam dignissimos quae.</p>
+                <a href="#">View More</a> 
+              </div>
+
+              <div>
+                <h2>Petty Job.com</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos officia voluptatibus nisi rerum laboriosam reprehenderit fugiat ducimus magnam dignissimos quae.</p>
+                <a href="#">View More</a> 
+              </div>
+
+              <div>
+                <h2>Landing Page</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos officia voluptatibus nisi rerum laboriosam reprehenderit fugiat ducimus magnam dignissimos quae.</p>
+                <a href="#">View More</a> 
+              </div>
+          </div>
+    </div>
+  </div>
+  
+<div id="contact-section">
+    <div class="container">
+    <div class="row">
+      <div class="contact-left">
+         <h1 class="sub-title">Contact Me</h1>
+         <p>contact@gmail.com</p>
+         <p>0123456789</p><br>
+         <a href="CV.pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form>
+          Name:<input type="text" placeholder="enter your name">
+          Email:<input type="email" placeholder="enter your email">
+          Comment:<textarea name="Message" rows="5"></textarea>
+
+          <button type="Submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2024 YourWebsiteName. All rights reserved.</p>
+    </div>
+  </div>
+  
+
+  <script>
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+       for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+       }
+
+       for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+       }
+
+       event.currentTarget.classList.add("active-link");
+       document.getElementById(tabname).classList.add("active-tab");
+     }
+
+  </script>
+
+</body>
+</html>
